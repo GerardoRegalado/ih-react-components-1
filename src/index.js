@@ -1,12 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import React from 'react';                      //Esto es lo mismo que const React = require("react") la misma sintaxis que usamos en modulo 2 (esto es ECMAScript6)
+import ReactDOM from 'react-dom';               //Genera la variable de la libreria, basicamente lo mismo que la linea de arriba
+import './index.css';                           //importa los estilos 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
+ReactDOM.render(                
   <React.StrictMode>
-    <App />
+    <App />                                       {/* esta es la funcion app del app.js */}
   </React.StrictMode>,
   document.getElementById('root')
 );

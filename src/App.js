@@ -1,25 +1,28 @@
+//importaciones 
+
 import logo from './logo.svg';
 import './App.css';
+import Header from './Header'
+import Footer from './Footer';
 
-function App() {
-  return (
+
+//funcion (componente) (componente creado a partir del div de la linea 14)
+function App() {              //esta invocacion viene del index.js linea 9
+//antes del return podemos agregar sentencias, instrucciones, logica, etc
+
+const name= "Gerardo-san"
+const name2 = "del ejercicio"
+  
+  return (                    //los parentesis en el return significan que se aplica un formato llamado JSX, basicamente es lo mismo que handlebars del modulo dos pero aqui es combinar javascript con HTML
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header nombre= {name}/>              {/* el header, al venir de una funcion le podemos pasar argumentos como se hace en el ejemplo */}
+      <Footer nombre2= {name2}/>
     </div>
+    
+
   );
 }
 
+//exportacion
+//module.exports = app (es lo mismo que en modulo dos peeeero..... con ECMAscript)
 export default App;
